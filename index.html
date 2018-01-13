@@ -2,147 +2,444 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Ruthie Campiz</title>
+	
+  <!-- Page Title -->
+  <title>Ruthie Campiz - Portfolio</title>
+  <!-- Linking Bootstrap V4 -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+  <!-- Personal Style Sheet -->
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <!-- Linking Font Awesome -->
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
 
-  <nav class="navbar navbar-expand-md navbar-dark" style="background-color: #000;">
+  <!-- Start Nav -->
+  <nav class="navbar navbar-expand-md navbar-dark navbar-black">
     <a class="navbar-brand" href="#"><span class="mint">Ruthie Campiz</span></a>
+
+    <!-- Hamburger Button -->
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
+
+    <!-- Nav Links Open Modals -->
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="modal" data-target="#resume">Resume</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="cv.html">Resume</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" data-toggle="modal" data-target="#contactInfo">Contact</a>
         </li>
       </ul>
       <span class="navbar-text">
-        Navbar text with an inline element
+        <a data-toggle="modal" data-target="#openOpps">Open to Opportunities</a>
       </span>
     </div>
+    
   </nav>
+  <!-- End Nav -->
 
-<div class="container" style="margin-top: 15px;">
-  <div class="card-columns">
-  <div class="card" style="padding: 5px 0 5px 0;">
-    <img class="card-img-top" src="assets/images/alice2.jpg" alt="Card image cap">
-  </div>
-  <div class="card">
-    <img class="card-img" src="assets/images/gobi.jpg" alt="Card image">
-  </div>
-  <div class="card p-3">
-  	<div class="card bg-mint text-center p-3">
-    <blockquote class="blockquote mb-0">
-      <p>A front end web developer with an intention is to create and help people.</p>
-    </blockquote>
-  </div>
-    <div class="card-body">
-      <h5 class="card-title">I Made This</h5>
-      <p style="border-top: 1px solid #ccc;"><small class="text-muted">The following are GitHub projects I have worked on. Click for details.</small></p>
+  <!-- Begin Main Container -->
+  <div class="container main">
+  
+    <!-- Begin Card-Columns -->
+    <div class="card-columns">
       
-      <p><a href="https://github.com/ruthieirl/burger" target="_blank"><i class="fa fa-cutlery" aria-hidden="true"></i> Eat-Da-Burger</a><br/>
-      Node.js, Express, Handlebars, MySQL, Bootstrap, HTML, and CSS.</p>
-      
-      <p><a href="https://github.com/ruthieirl/Hangman-Game" target="_blank"><i class="fa fa-meh-o" aria-hidden="true"></i> Hangman</a><br/> 
-       HTML, CSS, Bootstrap, and JavaScript.
-      </p>
+      <!-- Begin First Card -->
+      <div class="card textImg">
+        <img class="card-img-top" src="assets/images/alice2.jpg" alt="Card image cap">
+      </div>
+      <!-- End First Card -->
 
-      <p><a href="https://github.com/ruthieirl/liri-node-app" target="_blank"><i class="fa fa-android" aria-hidden="true"></i> LIRI Bot</a><br/>
-      Node.js, NPMs, and APIs.</p>
+      <!-- Start Second Card -->  
+      <div class="card bg-mint text-center">
+        <blockquote class="blockquote mb-0">
+          <p>A front end web developer with experience creating visually attractive, functional, and user-friendly applications using CSS, HTML, JavaScript, jQuery, Node.js, GIT, Github, Bootstrap, Foundation, Media Queries, APIs, &amp; JSON.</p>
+        </blockquote>
+      </div>
+      <!-- End Second Card -->
       
-      <p><a href="https://github.com/ruthieirl/week-4-game" target="_blank"><i class="fa fa-diamond" aria-hidden="true"></i> Crystal Picker</a><br/> 
-      	JavaScript, jQuery, Bootstrap, HTML, and CSS.
-      </p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="assets/images/dogmom.jpg" alt="Card image cap">
-    <div class="card-body">
-      <h5 class="card-title">Who Am I?</h5>
-      <p class="card-text">
-      	<span class="grey"><i class="fa fa-moon-o" aria-hidden="true"></i></span> Dreamer<br/> 
-      	<span class="grey"><i class="fa fa-paw" aria-hidden="true"></i></span> Animal Lover<br/> 
-      	<span class="grey"><i class="fa fa-book" aria-hidden="true"></i></span> Book Worm<br/> 
-      	<span class="grey"><i class="fa fa-microphone" aria-hidden="true"></i></span>  Karaoke Killah<br/> 
-      	<span class="grey"><i class="fa fa-star-o" aria-hidden="true"></i></span> The Principle Dancer in my House<br/> 
-      	<span class="grey"><i class="fa fa-heart-o" aria-hidden="true"></i></span> Believer of Love and Magic <span class="grey"><i class="fa fa-magic" aria-hidden="true"></i></span><br/> 
-      	<span class="grey"><i class="fa fa-code" aria-hidden="true"></i></span> Oh yea...and I do a little coding.
-      </p>
-    </div>
-  </div>
-  <div class="card bg-mint text-center p-3">
-    <blockquote class="blockquote mb-0">
-      <p>Experience creating visually attractive, functional, and user-friendly applications using CSS, HTML, JavaScript, jQuery, Node.js, GIT, Github, Bootstrap, Foundation, Media Queries, APIs, & JSON.</p>
-      
-    </blockquote>
-  </div>
-  <div class="card text-center">
-    <div class="card-body">
-      <h5 class="card-title">Colaboration Projects</h5>
-      <p style="border-top: 1px solid #ccc;"><small class="text-muted">The following are GitHub projects I have contributed to. Click for details.</small></p>
-      
-      <p><a href="https://github.com/CaptainJimmy/HarborMaster" target="_blank"><i class="fa fa-ship" aria-hidden="true"></i> Harbor Master</a><br/>
-      Front End UX/UI Design, Form Interactions, JavaScript, and Database Interation.</p>
-      
-      <p><a href="https://github.com/CaptainJimmy/flea-commerce" target="_blank"><i class="fa fa-bug" aria-hidden="true"></i> Flea-Commerce</a><br/> Front End UI/UX Design, Form Interactions, CSS Customizations, JavaScript, and Database Integration.
-      </p>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img" src="assets/images/lit.jpg" alt="Card image">
-  </div>
+      <!-- Begin Third Card -->
+      <div class="card">
+        <img class="card-img-top" src="assets/images/dogmom.jpg" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Who Am I?</h5>
+        
+          <p class="card-text">
+            <span class="grey"><i class="fa fa-moon-o" aria-hidden="true"></i></span> Dreamer<br/> 
+            <span class="grey"><i class="fa fa-paw" aria-hidden="true"></i></span> Animal Lover<br/> 
+            <span class="grey"><i class="fa fa-book" aria-hidden="true"></i></span> Book Worm<br/> 
+            <span class="grey"><i class="fa fa-microphone" aria-hidden="true"></i></span>  Karaoke Killah<br/> 
+            <span class="grey"><i class="fa fa-star-o" aria-hidden="true"></i></span> The Principle Dancer in my House<br/> 
+            <span class="grey"><i class="fa fa-heart-o" aria-hidden="true"></i></span> Believer of Love and Magic <span class="grey"><i class="fa fa-magic" aria-hidden="true"></i></span><br/> 
+            <span class="grey"><i class="fa fa-code" aria-hidden="true"></i></span> Oh yea...and I do a little coding.
+          </p>
 
-  <div class="card p-3 text-right">
-    <blockquote class="blockquote mb-0">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      <footer class="blockquote-footer">
-        <small class="text-muted">
-          Someone famous in <cite title="Source Title">Source Title</cite>
-        </small>
-      </footer>
-    </blockquote>
+        </div>
+        <!-- End Card Body -->
+    
+      </div>
+      <!-- End Third Card -->
+
+      <!-- Begin Fourth Card -->
+      <div class="card p-3">
+        
+        <!-- White Part of Third Card -->
+        <div class="card-body">
+          <h5 class="card-title">I Made This</h5>
+          <p class="pBord"><small class="text-muted">The following are GitHub projects I have worked on. Click for details.</small></p>
+      
+          <p>
+            <a href="https://github.com/ruthieirl/burger" target="_blank"><i class="fa fa-cutlery" aria-hidden="true"></i> Eat-Da-Burger</a><br/>
+            Node.js, Express, Handlebars, MySQL, Bootstrap, HTML, and CSS.
+          </p>
+      
+          <p>
+            <a href="https://github.com/ruthieirl/Hangman-Game" target="_blank"><i class="fa fa-meh-o" aria-hidden="true"></i> Hangman</a><br/> 
+            HTML, CSS, Bootstrap, and JavaScript.
+          </p>
+
+          <p>
+            <a href="https://github.com/ruthieirl/liri-node-app" target="_blank"><i class="fa fa-android" aria-hidden="true"></i> LIRI Bot</a><br/>
+            Node.js, NPMs, and APIs.
+          </p>
+      
+          <p>
+            <a href="https://github.com/ruthieirl/week-4-game" target="_blank"><i class="fa fa-diamond" aria-hidden="true"></i> Crystal Picker</a><br/>JavaScript, jQuery, Bootstrap, HTML, and CSS.
+          </p>
+
+        </div>
+        <!-- End of White Section -->
+
+      </div>
+      <!-- End of Fourth Card -->
+
+      <!-- Begin Fifth Card -->
+      <div class="card">
+        <img class="card-img" src="assets/images/gobi.jpg" alt="Card image">
+      </div>
+      <!-- End Fifth Card -->
+      
+      <!-- Start Sixth Card -->
+      <div class="card text-center">
+        
+        <div class="card-body">
+          <h5 class="card-title">Colaboration Projects</h5>
+          
+          <p class="pBord"><small class="text-muted">The following are GitHub projects I have contributed to. Click for details.</small></p>
+      
+          <p>
+            <a href="https://github.com/CaptainJimmy/HarborMaster" target="_blank"><i class="fa fa-ship" aria-hidden="true"></i> Harbor Master</a><br/>
+            Front End UX/UI Design, Form Interactions, JavaScript, and Database Interation.
+          </p>
+      
+          <p>
+            <a href="https://github.com/CaptainJimmy/flea-commerce" target="_blank"><i class="fa fa-bug" aria-hidden="true"></i> Flea-Commerce</a><br/> Front End UI/UX Design, Form Interactions, CSS Customizations, JavaScript, and Database Integration.
+          </p>
+      
+        </div>
+        <!-- End Card Body -->
+
+      </div>
+      <!-- End Sixth Card -->
+      
+      <!-- Start Seventh Card -->
+      <div class="card">
+        <img class="card-img" src="assets/images/nap.png" alt="Card image">
+      </div>
+      <!-- End Seventh Card -->
+
+      <!-- Start Eighth Card -->  
+      <div class="card bg-mint text-center">
+        <blockquote class="blockquote mb-0" style="padding-bottom: 10px;">
+          <p>Groups I Follow</p>
+          <ul class="ulNo">
+            <small>
+              <li><a href="https://www.facebook.com/groups/newbiecoderwarehouse" target="_blank">Newbie Coder Warehouse</a></li>
+              <li><a href="https://www.facebook.com/groups/freeCodeCampEarth" target="_blank">freeCodeCamp Earth</a></li>
+              <li><a href="https://www.facebook.com/groups/free.code.camp.new.brunswick.new.jersey" target="_blank">freeCodeCamp New Brunswick</a></li>
+              <li><a href="https://www.linkedin.com/company/3233332/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BMM9XFCW8TKOvuE3XxhS6Fw%3D%3D&licu=urn%3Ali%3Acontrol%3Ad_flagship3_profile_view_base-interests_company_clicked" target="_blank">Women Who Code</a></li>
+            </small>
+          </ul>
+        </blockquote>
+      </div>
+      <!-- End Eighth Card -->
+
+      <!-- Start Ninth Card -->
+      <div class="card p-3 text-right">
+        <blockquote class="blockquote mb-0">
+          
+          <p>How do you live forever?</p>
+
+          <p class="grey"><strong>Create.</strong></p>
+        
+        </blockquote>
+      </div>
+      <!-- End Ninth Card -->
+
+      <!-- Start Tenth Card -->
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Connect With Me</h5>
+          <p class="card-text">I am continuing to grow on a daily basis and welcome the opportunity to connect with others for learning and employment purposes. Please feel free to use the links below.</p>
+          
+          <p class="card-text text-center">
+      	    <a href="https://github.com/ruthieirl" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+	  	      <a href="https://www.linkedin.com/in/ruthiecampiz/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+	  	      <a href="https://stackoverflow.com/users/8222071/ruthie-c?tab=profile" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+	  	      <a href="https://codepen.io/ruthie_irl/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+	  	      <a href="https://www.freecodecamp.org/ruthieirl" target="_blank"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
+	  	      <a href="mailto:ruthfromjersey@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+	        </p>
+    
+          <p class="text-center">
+            <small>
+              Email me at ruthiecampiz.pro@gmail.com
+            </small>
+          </p>
+
+        </div>
+        <!-- End Card Body -->
+      
+      </div>
+      <!-- End Tenth Card -->
+    
+    </div>
+    <!-- End Card-Columns -->
+  
   </div>
-  <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Connect With Me</h5>
-      <p class="card-text">I am continuing to grow on a daily basis and welcome the opportunity to connect with others for learning and employment purposes. Please feel free to use the links below.</p>
-      <p class="card-text text-center">
-      	<a href="https://github.com/ruthieirl" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
-	  	<a href="https://www.linkedin.com/in/ruthiecampiz/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-	  	<a href="https://stackoverflow.com/users/8222071/ruthie-c?tab=profile" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
-	  	<a href="https://codepen.io/ruthie_irl/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
-	  	<a href="https://www.freecodecamp.org/ruthieirl" target="_blank"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
-	  	<a href="mailto:ruthfromjersey@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-	  </p>
+  <!-- End Main Container -->
+
+  <!-- Start Resume Modal -->
+  <div class="modal fade" id="resume">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+      
+        <!-- Resume Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Resume</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Resume Body -->
+        <div class="container">
+          
+          <h1 class="text-center">Ruthie Campiz</h1>
+          
+          <p class="text-center">
+            <a href="emailto:ruthiecampiz.pro@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i> ruthiecampiz.pro@gmail.com</a> |
+            <i class="fa fa-phone" aria-hidden="true"></i> 732.648.7376 |
+            <i class="fa fa-home" aria-hidden="true"></i> South Plainfield, New Jersey <br/>
+            <a href="https://github.com/ruthieirl"><i class="fa fa-github-alt" aria-hidden="true"></i> https://github.com/ruthieirl</a> |
+            <a href="www.linkedin.com/in/ruthiecampiz"><i class="fa fa-linkedin-square" aria-hidden="true"></i> www.linkedin.com/in/ruthiecampiz</a>
+          </p>
+    
+          <p>
+            <em>
+              Psychology graduate with an HR background and an artsy side that has led to an interest in front end web development.  Experience creating visually attractive, functional, and user-friendly applications using CSS, HTML, JavaScript, jQuery, Node.js, GIT, Github, Bootstrap, Foundation, Media Queries, APIs, &amp; JSON.
+            </em>
+          </p>
+    
+          <h3>Education</h3>
+          
+          <p>
+            <strong>Rutgers, the State University of New Jersey, Somerset, NJ</strong><br/>
+            Rutgers Coding Bootcamp, Full Stack Web Development<br/>
+            July 2017 - January 2018<br/>
+            An intensive 24-week long boot camp dedicated to designing and building web applications.  Skills practiced consisted of CSS3, HTML5, JavaScript, jQuery, Boostrap, Firebase, Node.js, MySQL, MongoDB, Express, Handlebars.js &amp; ReactJS
+          </p>
+          
+          <p>
+            <strong>The Pennsylvania State University, College Park, Pennsylvania</strong><br>
+            Bachelor of Arts in Psychology<br/>
+            August 2000 – December 2003<br/>
+            GPA: 3.67
+          </p>
+
+          <h4>Applications Built</h4>
+          
+          <p>
+            <h5><strong>Harbor Master</strong></h5>
+            Worker bee in a three-member work group.  Designed and coded front end of a vessel management system.  Users are prompted for responses.  Responses are stored in database and can be called upon by management.<br/>
+            Tools/Technology: HTML, CSS, Foundation, JavaScript, jQuery<br/>
+            <a href="https://github.com/CaptainJimmy/HarborMaster">GitHub Repository</a>
+          </p>
+  
+          <p>
+            <h5><strong>Eat-Da-Burger</strong></h5>
+            A full stack application with the front end implemented with HTML, CSS, and Bootstrap, and the back end with Node.js and Express. Data is stored in a MySQL database. HTML templating is done handled with the use of Handlebars.<br/>
+            Tools/Technology: Node.js, Express, Handlebars, MySQL, Bootstrap, HTML, CSS<br/>
+            <a href="https://github.com/ruthieirl/burger">GitHub Repository</a>
+          </p>
+          
+          <p>
+            <h5><strong>LIRI Bot</strong></h5>
+            A solo project developed using the command line to retrieve data from Twitter, Spotify, and OMDB APIs and display it neatly in the console.<br/>
+            Tools/Technology: Node.js, APIs<br/>
+            <a href="https://github.com/ruthieirl/liri-node-app">GitHub Repository</a>
+          </p>
+
+          <h3>Relevant Experience</h3>
+          
+          <p>
+            <strong>SummitQwest, Inc.</strong><br/>
+            Role: Consultant<br/>
+            January 2008 – January 2010<br/>
+            Created browser independent JSP pages from Photoshop PSD assets and spec sheets for Proctor &amp; Gamble and Novartis in a small team environment.<br/>
+            Tools/Technology: CSS, HTML, Adobe Dreamweaver, Microsoft Visual Source Safe, MS Office, Adobe Photoshop, and Outlook
+          </p>
+
+          <h4>Additional Work Experience</h4>
+          
+          <div class="row">
+            <div class="col-md-6 col-sm-12">
+
+              <ul>
+                <li>
+                  <strong>Insight Pest Solutions</strong><br/>
+                  Licensed Applicator<br/>
+                  May 2016 – May 2017
+                </li>
+                <li>
+                  <strong>SGS Accutest</strong><br/>
+                  Marketing Assistant<br/>
+                  October 2013 – May 2016
+                </li>
+                <li>
+                  <strong>Accutest Laboratories</strong><br/>
+                  Human Resource Coordinator<br/>
+                  December 2011 – October 2013 
+                </li>
+              </ul>
+
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+              <ul>
+                <li>
+                  <strong>EAPT Solutions</strong><br/>
+                  Technical Recruiter<br/>
+                  November 2010 – September 2011
+                </li>
+                <li>
+                  <strong>Paychex, Inc.</strong><br/>
+                  Payroll Specialist<br/>
+                  April 2005 - November 2006
+                </li>
+                <li>
+                  <strong>General Shale Brick</strong><br/>
+                  Customer Service Representative<br/>
+                  March 2004 – March 2005
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+          <!-- End Row -->
+        
+        </div>
+        <!-- End Resume Body -->
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-mint" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
     </div>
   </div>
-</div>
-</div>
+  <!-- End of Resume Modal -->
+
+  <!-- Contact Modal -->
+  <div class="modal fade" id="contactInfo">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Contact  Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">So Call Me Maybe?</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Contact Body -->
+        <div class="container">
+
+          <p class="card-text">
+            I enjoy and welcome the opportunity to meet, learn, and work with people, so feel free to connect with my on social platforms or to contact me regarding employment opportunities. 
+          </p>
+          
+          <h2 class="text-center">
+            <a href="https://github.com/ruthieirl" target="_blank"><i class="fa fa-github-alt" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/ruthiecampiz/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+            <a href="https://stackoverflow.com/users/8222071/ruthie-c?tab=profile" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+            <a href="https://codepen.io/ruthie_irl/" target="_blank"><i class="fa fa-codepen" aria-hidden="true"></i></a>
+            <a href="https://www.freecodecamp.org/ruthieirl" target="_blank"><i class="fa fa-free-code-camp" aria-hidden="true"></i></a>
+            <a href="mailto:ruthfromjersey@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+          </h2>
+
+          <p class="card-text text-center">
+            <small>
+              Email me at ruthiecampiz.pro@gmail.com
+            </small>
+          </p>
+
+        </div>
+
+        <!-- Contact Footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-mint" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- End of Contact Modal -->
+
+    <!-- Opportunities Modal -->
+  <div class="modal fade" id="openOpps">
+    <div class="modal-dialog">
+      <div class="modal-content">
+      
+        <!-- Modal Header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Get At Your Girl!</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        
+        <!-- Modal body -->
+        <div class="container">
+          <img src="assets/images/pittyParty.png" class="img-thumbnail">
+          <h3 class="text-center">I am currently available for projects, employment, or just to chat.</h3>
+        </div>
+
+        <!-- Modal footer -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-mint" data-dismiss="modal">Close</button>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <!-- End of Opportunities Modal -->
+  
+  <!-- Begin Footer -->
 	<footer class="footer myfooter">
       <div class="container">
         <p class="text-center"><i class="fa fa-copyright" aria-hidden="true"></i> 2018 Ruthie Campiz</p>
       </div>
-    </footer>
+  </footer>
+  <!-- End Footer -->
 
+  <!-- Script Sources -->
 	<script src="https://use.fontawesome.com/e33569b64c.js"></script>
-
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
-
-
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+  <!-- End Script Sources -->
 	
 </body>
 </html>
